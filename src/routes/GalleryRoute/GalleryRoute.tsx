@@ -27,9 +27,9 @@ export function GalleryRoute () {
     setSearchText(event.target.value)
   }
 
-  const handleSelection = (photoId: number) => {
+  const handleSelection = (photoLink: string) => {
     dispatch(setAuthorId(''))
-    navigate(`photo/${photoId}`)
+    navigate(`photo/${photoLink}`)
   }
 
   return (
